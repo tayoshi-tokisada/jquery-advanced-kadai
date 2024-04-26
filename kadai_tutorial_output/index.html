@@ -11,6 +11,10 @@
     <meta property="og:title" content="SocialTech">
     <meta property="og:description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します。">
     <meta property="og:image" content="images/logo.png">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -68,13 +72,25 @@
     </header>
     <main>
       <article>
-        <!-- メインビジュアル -->
-        <section id="main-visual">
-          <div id="main-message">
-            <h1>WORLD PEACE</h1>
-            <p>IT教育で世界平和を実現する</p>
+        <!-- メインビジュアルカルーセル -->
+        <section id="carousel-section">
+          <div class="carousel">
+            <div>
+              <a href="index.html">
+                <img class="carouselImg" src="images/carousel1.png">
+              </a>
+            </div>
+            <div>
+              <a href="mission.html">
+                <img class="carouselImg" src="images/carousel2.png">
+              </a>
+            </div>
+            <div>
+              <a href="product.html">
+                <img class="carouselImg" src="images/carousel3.png">
+              </a>
+            </div>
           </div>
-          <img src="images/index/index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
         </section>
         <!-- MISSION -->
         <section id="mission">
@@ -473,6 +489,7 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
